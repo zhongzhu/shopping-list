@@ -14,14 +14,14 @@ export default {
   name: 'app',
   data: function () {
     return {
-      items: [{ 
+      items: [{
         text: '小米电视4A', checked: true },
         { text: '米家扫地机器人', checked: false },
         { text: 'Yeelight LED吸顶灯', checked: false }],
-      title: '双11都买些啥啦？',
+      title: '双11都买些啥啦？'
     }
   },
-  components: { 
+  components: {
     AddItem,
     ShoppingList
   }

@@ -19,7 +19,7 @@ export default {
     return {
     }
   },
-  props: ['items'],
+  props: ['items']
 }
 </script>
 
