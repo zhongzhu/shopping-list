@@ -1,15 +1,14 @@
 <template id="add-item">
   <div class="input-group">
-    <input v-model="newItem" placeholder="add shopping list item" type="text" class="form-control" @keyup.enter='addItem'>
+    <input v-model="newItem" type="text" class="form-control" placeholder="add shopping list item" @keyup.enter='addItem'>
     <span class="input-group-btn">
-      <button class="btn btn-default" type="button" @click='addItem'>Add</button>
+      <button class="btn btn-secondary" type="button" @click='addItem'>Add</button>
     </span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AddItem',
   data () {
     return {
       newItem: ''
