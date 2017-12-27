@@ -9,17 +9,23 @@
 <script>
   import AddItemComponent from './components/AddItemComponent'
   import ItemsComponent from './components/ItemsComponent'
+  import store from './vuex/store'
+  import {mapGetters} from 'vuex'
 
   export default {
-    data () {
-      return {
-        items: [{ text: '小米电视4A', checked: true },
-          { text: '米家扫地机器人', checked: false },
-          { text: 'Yeelight LED吸顶灯', checked: false }],
-        title: '双11都买些啥啦？'
-      }
-    },
-    components: { AddItemComponent, ItemsComponent }
+    // data () {
+    //   return {
+    //     items: [{ text: '小米电视4A', checked: true },
+    //       { text: '米家扫地机器人', checked: false },
+    //       { text: 'Yeelight LED吸顶灯', checked: false }],
+    //     title: '双11都买些啥啦？'
+    //   }
+    // },
+    store: store,
+    components: { AddItemComponent, ItemsComponent },
+    computed: mapGetters({
+      title: 'getTitle'
+    })
   }
 </script>
 

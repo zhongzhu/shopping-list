@@ -14,12 +14,11 @@ export default {
       newItem: ''
     }
   },
-  props: ['items'],
   methods: {
     addItem: function () {
       let text = this.newItem.trim()
       if (text) {
-        this.items.push({text: text, checked: false})
+        this.$store.commit('addItem', {text: text, checked: false})
         this.newItem = ''
       }
     }

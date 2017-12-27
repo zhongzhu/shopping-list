@@ -6,13 +6,15 @@
 
 <script>
   import ItemComponent from './ItemComponent'
+  import {mapGetters} from 'vuex'
 
   export default {
-    props: ['items'],
-    components: { ItemComponent }
+    components: { ItemComponent },
+    computed: mapGetters({
+      items: 'getItems'
+    })
   }
 </script>
 
 <style scoped>
-  
 </style>

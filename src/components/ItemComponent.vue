@@ -3,7 +3,7 @@
     <div class="form-check">
       <label class="form-check-label">
         <input class="form-check-input" type="checkbox" v-model="item.checked">
-        {{ item.text }}  
+        {{ item.text }}
       </label>
     </div>
   </li>
@@ -26,6 +26,6 @@
 
   ul li {
     list-style-type: none;
-  }  
+  }
 
 </style>
